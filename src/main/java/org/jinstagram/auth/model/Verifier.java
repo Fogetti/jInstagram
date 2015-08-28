@@ -1,11 +1,14 @@
 package org.jinstagram.auth.model;
 
+import java.io.Serializable;
+
 import org.jinstagram.utils.Preconditions;
 
 /**
  * Represents an OAuth verifier code.
  */
-public class Verifier {
+public class Verifier implements Serializable {
+	private static final long serialVersionUID = 5063784683986183215L;
 	private final String value;
 
 	/**

@@ -1,11 +1,13 @@
 package org.jinstagram.entity.relationships;
 
-import com.google.gson.annotations.SerializedName;
-
 import org.jinstagram.InstagramObject;
 import org.jinstagram.entity.common.Meta;
 
+import com.google.gson.annotations.SerializedName;
+
 public class RelationshipFeed extends InstagramObject{
+	private static final long serialVersionUID = -1672764381305233332L;
+
 	@SerializedName("data")
 	private RelationshipData data;
 

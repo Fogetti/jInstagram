@@ -4,7 +4,8 @@ package org.jinstagram.auth.exceptions;
  * Represents a problem in the OAuth signing process
  */
 public class OAuthException extends RuntimeException {
-	private static final long serialVersionUID = 1L;
+
+	private static final long serialVersionUID = -3021244330850851010L;
 
 	/**
 	 * No-exception constructor. Used when there is no original exception

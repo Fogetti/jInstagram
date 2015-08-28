@@ -1,5 +1,7 @@
 package org.jinstagram.entity.common;
 
+import java.io.Serializable;
+
 import com.google.gson.annotations.SerializedName;
 
 /**
@@ -10,7 +12,10 @@ import com.google.gson.annotations.SerializedName;
  * @author Sachin Handiekar
  * @version 1.0
  */
-public class Meta {
+public class Meta implements Serializable {
+
+	private static final long serialVersionUID = 8727337765142624643L;
+
 	@SerializedName("code")
 	private int code;
 

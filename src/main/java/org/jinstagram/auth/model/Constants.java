@@ -1,7 +1,11 @@
 package org.jinstagram.auth.model;
 
-public class Constants {
+import java.io.Serializable;
+
+public class Constants implements Serializable {
 	
+	private static final long serialVersionUID = 5546434387636523390L;
+
 	public static final String INSTAGRAM_OAUTH_URL_BASE = "https://api.instagram.com/oauth";
 	
 	public static final String ACCESS_TOKEN_ENDPOINT = INSTAGRAM_OAUTH_URL_BASE + "/access_token";

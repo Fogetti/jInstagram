@@ -1,6 +1,10 @@
 package org.jinstagram.auth.model;
 
-public class OAuthConfig {
+import java.io.Serializable;
+
+public class OAuthConfig implements Serializable {
+	private static final long serialVersionUID = -7005445811003331865L;
+
 	private final String apiKey;
 
 	private final String apiSecret;

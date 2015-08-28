@@ -1,9 +1,13 @@
 package org.jinstagram.auth.model;
 
+import java.io.Serializable;
+
 /**
  * This class contains OAuth constants.
  */
-public class OAuthConstants {
+public class OAuthConstants implements Serializable {
+	private static final long serialVersionUID = 143919245022926806L;
+
 	public static final String ACCESS_TOKEN = "access_token";
 
 	public static final String CLIENT_ID = "client_id";

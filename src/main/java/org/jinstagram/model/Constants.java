@@ -1,6 +1,10 @@
 package org.jinstagram.model;
 
-public final class Constants {
+import java.io.Serializable;
+
+public final class Constants implements Serializable {
+	private static final long serialVersionUID = 2077865652122476447L;
+
 	public static final String BASE_URI = "https://api.instagram.com";
 
 	public static final String VERSION = "v1";

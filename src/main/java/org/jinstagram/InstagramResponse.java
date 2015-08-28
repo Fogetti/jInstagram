@@ -1,12 +1,14 @@
 package org.jinstagram;
 
+import java.io.Serializable;
+
 /**
  * Interface to represent information in Instagram response header
  * 
  * @author Arinto Murdopo
  * @since 1.0.10
  */
-public interface InstagramResponse {
+public interface InstagramResponse extends Serializable {
 
 	/**
 	 * Get the available API limit. It correspond to the value of 

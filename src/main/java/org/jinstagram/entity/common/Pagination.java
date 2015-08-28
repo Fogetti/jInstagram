@@ -1,9 +1,14 @@
 package org.jinstagram.entity.common;
 
-import com.google.gson.annotations.SerializedName;
+import java.io.Serializable;
+
 import org.apache.commons.lang3.StringUtils;
 
-public class Pagination {
+import com.google.gson.annotations.SerializedName;
+
+public class Pagination implements Serializable {
+	private static final long serialVersionUID = -5767372349162927644L;
+
 	@SerializedName("deprecation_warning")
 	private String depreciationWarning;
 

@@ -1,5 +1,6 @@
 package org.jinstagram.entity.users.feed;
 
+import java.io.Serializable;
 import java.util.List;
 
 import org.jinstagram.entity.common.Caption;
@@ -13,7 +14,9 @@ import org.jinstagram.entity.common.Videos;
 
 import com.google.gson.annotations.SerializedName;
 
-public class MediaFeedData {
+public class MediaFeedData implements Serializable {
+	private static final long serialVersionUID = 2012325627845030173L;
+
 	@SerializedName("caption")
 	private Caption caption;
 

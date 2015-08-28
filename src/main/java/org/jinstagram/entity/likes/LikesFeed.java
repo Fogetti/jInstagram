@@ -10,6 +10,8 @@ import com.google.gson.annotations.SerializedName;
 
 public class LikesFeed extends InstagramObject {
 
+	private static final long serialVersionUID = 7767058455666227193L;
+
 	@SerializedName("meta")
 	private Meta meta;
 

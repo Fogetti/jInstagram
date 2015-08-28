@@ -1,11 +1,13 @@
 package org.jinstagram.entity.tags;
 
-import com.google.gson.annotations.SerializedName;
-
 import org.jinstagram.InstagramObject;
 import org.jinstagram.entity.common.Meta;
 
+import com.google.gson.annotations.SerializedName;
+
 public class TagInfoFeed extends InstagramObject{
+	private static final long serialVersionUID = 4064653320714118646L;
+
 	@SerializedName("meta")
 	private Meta meta;
 

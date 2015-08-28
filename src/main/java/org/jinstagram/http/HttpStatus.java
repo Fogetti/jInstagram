@@ -1,9 +1,11 @@
 package org.jinstagram.http;
 
+import java.io.Serializable;
+
 /**
  * @author Sachin Handiekar
  */
-public enum HttpStatus {
+public enum HttpStatus implements Serializable {
 
 
 

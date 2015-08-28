@@ -1,8 +1,12 @@
 package org.jinstagram.entity.common;
 
+import java.io.Serializable;
+
 import com.google.gson.annotations.SerializedName;
 
-public class Caption {
+public class Caption implements Serializable {
+	private static final long serialVersionUID = -727105297986441225L;
+
 	@SerializedName("created_time")
 	private String createdTime;
 

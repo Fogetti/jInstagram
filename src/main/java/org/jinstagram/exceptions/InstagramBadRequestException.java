@@ -6,7 +6,8 @@ import java.util.Map;
  * An exception class to deal with a bad request.
  */
 public class InstagramBadRequestException extends InstagramException {
-	private static final long serialVersionUID = 1L;
+
+	private static final long serialVersionUID = 2941525158538308162L;
 
 	/**
 	 * No-exception constructor. Used when there is no original exception

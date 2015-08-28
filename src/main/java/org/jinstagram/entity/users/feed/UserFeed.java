@@ -1,14 +1,16 @@
 package org.jinstagram.entity.users.feed;
 
-import com.google.gson.annotations.SerializedName;
+import java.util.List;
 
 import org.jinstagram.InstagramObject;
 import org.jinstagram.entity.common.Meta;
 import org.jinstagram.entity.common.Pagination;
 
-import java.util.List;
+import com.google.gson.annotations.SerializedName;
 
 public class UserFeed extends InstagramObject{
+	private static final long serialVersionUID = 2297287497821225433L;
+
 	@SerializedName("meta")
 	private Meta meta;
 

@@ -2,17 +2,18 @@ package org.jinstagram.http;
 
 import java.io.IOException;
 import java.io.InputStream;
-
+import java.io.Serializable;
 import java.net.HttpURLConnection;
 import java.net.UnknownHostException;
-
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  * Represents an HTTP Response.
  */
-public class Response {
+public class Response implements Serializable {
+	private static final long serialVersionUID = 2369642766341626606L;
+
 	private static final String EMPTY_RESPONSE = "";
 
 	private String body;

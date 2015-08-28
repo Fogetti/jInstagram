@@ -1,8 +1,12 @@
 package org.jinstagram.entity.common;
 
+import java.io.Serializable;
+
 import com.google.gson.annotations.SerializedName;
 
-public class VideoData {
+public class VideoData implements Serializable {
+
+	private static final long serialVersionUID = -2697592416992589884L;
 
 	public String getUrl() {
 		return url;

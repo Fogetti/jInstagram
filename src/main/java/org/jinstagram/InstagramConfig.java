@@ -1,9 +1,12 @@
 package org.jinstagram;
 
+import java.io.Serializable;
+
 import org.jinstagram.model.Constants;
 
-public class InstagramConfig {
+public class InstagramConfig implements Serializable {
 
+	private static final long serialVersionUID = 829807885256070473L;
 	private String baseURI;
 	private String version;
 	private String apiURL;

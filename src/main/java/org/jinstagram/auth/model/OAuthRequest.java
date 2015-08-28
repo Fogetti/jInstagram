@@ -1,10 +1,10 @@
 package org.jinstagram.auth.model;
 
-import org.jinstagram.http.Request;
-import org.jinstagram.http.Verbs;
-
 import java.util.HashMap;
 import java.util.Map;
+
+import org.jinstagram.http.Request;
+import org.jinstagram.http.Verbs;
 
 /**
  * The representation of an OAuth HttpRequest.
@@ -12,6 +12,8 @@ import java.util.Map;
  * Adds OAuth-related functionality to the {@link Request}
  */
 public class OAuthRequest extends Request {
+	private static final long serialVersionUID = -2315693151472654163L;
+
 	private static final String OAUTH_PREFIX = "oauth_";
 
 	private Map<String, String> oauthParameters;

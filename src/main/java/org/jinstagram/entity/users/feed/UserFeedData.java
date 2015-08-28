@@ -1,8 +1,12 @@
 package org.jinstagram.entity.users.feed;
 
+import java.io.Serializable;
+
 import com.google.gson.annotations.SerializedName;
 
-public class UserFeedData {
+public class UserFeedData implements Serializable {
+	private static final long serialVersionUID = -6410214392872551904L;
+
 	@Deprecated
 	@SerializedName("first_name")
 	private String firstName;

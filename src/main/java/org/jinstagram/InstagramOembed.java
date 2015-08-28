@@ -1,6 +1,7 @@
 package org.jinstagram;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.Map;
 
 import org.jinstagram.auth.model.OAuthRequest;
@@ -19,7 +20,9 @@ import com.google.gson.Gson;
  *
  * @author Sachin Handiekar
  */
-public class InstagramOembed {
+public class InstagramOembed implements Serializable {
+	private static final long serialVersionUID = 8789080297445827361L;
+
 	/**
 	 * Returns information about the media associated with that link.
 	 *

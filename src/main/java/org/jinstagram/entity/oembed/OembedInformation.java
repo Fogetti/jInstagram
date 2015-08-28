@@ -1,10 +1,14 @@
 package org.jinstagram.entity.oembed;
 
+import java.io.Serializable;
+
 import com.google.gson.annotations.SerializedName;
 
-public class OembedInformation {
+public class OembedInformation implements Serializable {
 
-    @SerializedName("provider_url")
+    private static final long serialVersionUID = -7855817459519427109L;
+
+	@SerializedName("provider_url")
     private String providerUrl;
 
     @SerializedName("title")

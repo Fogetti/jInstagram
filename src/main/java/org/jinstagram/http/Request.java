@@ -1,22 +1,25 @@
 package org.jinstagram.http;
 
-import org.jinstagram.auth.exceptions.OAuthException;
-
 import java.io.IOException;
+import java.io.Serializable;
 import java.io.UnsupportedEncodingException;
-
-import java.net.*;
-
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.Proxy;
+import java.net.URL;
 import java.nio.charset.Charset;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
+import org.jinstagram.auth.exceptions.OAuthException;
+
 /**
  * Represents an HTTP Request object
  */
-public class Request {
+public class Request implements Serializable {
+	private static final long serialVersionUID = 8375985827979114821L;
+
 	private static final String CONTENT_LENGTH = "Content-Length";
 
 	private String payload = null;

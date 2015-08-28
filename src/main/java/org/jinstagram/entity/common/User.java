@@ -1,8 +1,13 @@
 package org.jinstagram.entity.common;
 
+import java.io.Serializable;
+
 import com.google.gson.annotations.SerializedName;
 
-public class User {
+public class User implements Serializable {
+
+	private static final long serialVersionUID = 5438965666836452197L;
+
 	@SerializedName("bio")
 	private String bio;
 

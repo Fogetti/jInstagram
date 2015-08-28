@@ -1,6 +1,10 @@
 package org.jinstagram.model;
 
-public final class Methods {
+import java.io.Serializable;
+
+public final class Methods implements Serializable {
+
+	private static final long serialVersionUID = 7629754736588645643L;
 
 	/**
 	 * Remove a comment either on the authenticated user's media or authored by

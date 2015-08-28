@@ -1,8 +1,12 @@
 package org.jinstagram.entity.users.basicinfo;
 
+import java.io.Serializable;
+
 import com.google.gson.annotations.SerializedName;
 
-public class Counts {
+public class Counts implements Serializable {
+	private static final long serialVersionUID = 9111312571827161210L;
+
 	@SerializedName("follows")
 	private int follows;
 

@@ -13,6 +13,7 @@ import org.jinstagram.http.APILimitUtils;
  */
 public abstract class InstagramObject implements InstagramResponse{
 	
+	private static final long serialVersionUID = -345338089351601596L;
 	private Map<String, String> headers;
 	
 	/**
@@ -39,6 +40,7 @@ public abstract class InstagramObject implements InstagramResponse{
 	 * v1 API, this method should return 5000.
 	 * @return Available API limit
 	 */
+	@Override
 	public int getAPILimitStatus(){
 		return APILimitUtils.getAPILimitStatus(this.headers);
 	}
@@ -48,6 +50,7 @@ public abstract class InstagramObject implements InstagramResponse{
 	 * X-Ratelimit-Remaining key in HTTP response headers.
 	 * @return Remaining API limit
 	 */
+	@Override
 	public int getRemainingLimitStatus(){
 		return APILimitUtils.getRemainingLimitStatus(this.headers);
 	}

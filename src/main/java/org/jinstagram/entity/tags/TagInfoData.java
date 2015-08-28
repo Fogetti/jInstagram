@@ -1,8 +1,12 @@
 package org.jinstagram.entity.tags;
 
+import java.io.Serializable;
+
 import com.google.gson.annotations.SerializedName;
 
-public class TagInfoData {
+public class TagInfoData implements Serializable {
+	private static final long serialVersionUID = -7361774689983950074L;
+
 	@SerializedName("media_count")
 	private long mediaCount;
 

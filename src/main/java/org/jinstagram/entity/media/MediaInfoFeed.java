@@ -1,12 +1,14 @@
 package org.jinstagram.entity.media;
 
-import com.google.gson.annotations.SerializedName;
-
 import org.jinstagram.InstagramObject;
 import org.jinstagram.entity.common.Meta;
 import org.jinstagram.entity.users.feed.MediaFeedData;
 
+import com.google.gson.annotations.SerializedName;
+
 public class MediaInfoFeed extends InstagramObject{
+	private static final long serialVersionUID = 5384596927592912951L;
+
 	@SerializedName("data")
 	private MediaFeedData data;
 

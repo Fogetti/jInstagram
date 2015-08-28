@@ -1,6 +1,7 @@
 package org.jinstagram;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.net.Proxy;
 import java.util.Date;
 import java.util.HashMap;
@@ -47,8 +48,9 @@ import com.google.gson.JsonSyntaxException;
  * @author Sachin Handiekar
  * @since 1.0
  */
-public class Instagram {
+public class Instagram implements Serializable {
 
+	private static final long serialVersionUID = 8070496969851045527L;
 	private static final Logger logger = LoggerFactory.getLogger(Instagram.class);
 	private Token accessToken;
 	private final String clientId;

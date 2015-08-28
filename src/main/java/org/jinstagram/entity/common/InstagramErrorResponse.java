@@ -1,5 +1,6 @@
 package org.jinstagram.entity.common;
 
+import java.io.Serializable;
 import java.util.Map;
 
 import org.jinstagram.exceptions.InstagramBadRequestException;
@@ -14,9 +15,11 @@ import com.google.gson.JsonElement;
  * @author Sachin Handiekar
  *
  */
-public class InstagramErrorResponse {
+public class InstagramErrorResponse implements Serializable {
 
-    private Meta errorMeta;
+    private static final long serialVersionUID = -2298637018246097150L;
+
+	private Meta errorMeta;
 
     private Map<String, String> headers;
 

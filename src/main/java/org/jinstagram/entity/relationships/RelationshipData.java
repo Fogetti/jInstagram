@@ -1,9 +1,13 @@
 package org.jinstagram.entity.relationships;
 
+import java.io.Serializable;
+
 import com.google.gson.annotations.SerializedName;
 
-public class RelationshipData {
+public class RelationshipData implements Serializable {
 	
+	private static final long serialVersionUID = -1189758457257916511L;
+
 	@SerializedName("incoming_status")
 	private String incomingStatus;
 

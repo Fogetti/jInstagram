@@ -1,12 +1,16 @@
 package org.jinstagram.auth;
 
+import java.io.Serializable;
+
 import org.jinstagram.auth.model.OAuthConfig;
 import org.jinstagram.auth.model.OAuthConstants;
 import org.jinstagram.auth.oauth.InstagramService;
 import org.jinstagram.auth.oauth.OAuthService;
 import org.jinstagram.utils.Preconditions;
 
-public class InstagramAuthService {
+public class InstagramAuthService implements Serializable {
+	private static final long serialVersionUID = 6137993548919687335L;
+
 	private String apiKey;
 
 	private String apiSecret;

@@ -1,12 +1,15 @@
 package org.jinstagram.entity.common;
 
-import com.google.gson.annotations.SerializedName;
+import java.io.Serializable;
+import java.util.List;
 
 import org.jinstagram.entity.comments.CommentData;
 
-import java.util.List;
+import com.google.gson.annotations.SerializedName;
 
-public class Comments {
+public class Comments implements Serializable {
+	private static final long serialVersionUID = -3474853223933053271L;
+
 	@SerializedName("data")
 	private List<CommentData> comments;
 

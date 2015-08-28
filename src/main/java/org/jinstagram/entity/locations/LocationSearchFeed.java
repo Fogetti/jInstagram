@@ -9,6 +9,7 @@ import com.google.gson.annotations.SerializedName;
 
 public class LocationSearchFeed extends InstagramObject{
 
+	private static final long serialVersionUID = -2196744626718009338L;
 	@SerializedName("data")
 	private List<Location> locationList;
 

@@ -1,6 +1,8 @@
 package org.jinstagram.model;
 
-public enum Relationship {
+import java.io.Serializable;
+
+public enum Relationship implements Serializable {
 	FOLLOW, UNFOLLOW, BLOCK, UNBLOCK, APPROVE, DENY;
 
 	@Override

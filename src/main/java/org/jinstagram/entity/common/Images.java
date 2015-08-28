@@ -1,8 +1,12 @@
 package org.jinstagram.entity.common;
 
+import java.io.Serializable;
+
 import com.google.gson.annotations.SerializedName;
 
-public class Images {
+public class Images implements Serializable {
+	private static final long serialVersionUID = 1967439863747378329L;
+
 	@SerializedName("low_resolution")
 	private ImageData lowResolution;
 

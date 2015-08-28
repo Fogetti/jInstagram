@@ -1,6 +1,8 @@
 package org.jinstagram.model;
 
-public enum Scope {
+import java.io.Serializable;
+
+public enum Scope implements Serializable {
 
 	/**
 	 * A field to denote the scope 'basic'

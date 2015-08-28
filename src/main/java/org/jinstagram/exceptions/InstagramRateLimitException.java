@@ -3,7 +3,8 @@ package org.jinstagram.exceptions;
 import java.util.Map;
 
 public class InstagramRateLimitException extends InstagramException {
-	private static final long serialVersionUID = 1L;
+
+	private static final long serialVersionUID = -3254591286982603153L;
 
 	/**
 	 * No-exception constructor. Used when there is no original exception

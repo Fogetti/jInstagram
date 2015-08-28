@@ -1,5 +1,11 @@
 package org.jinstagram.auth;
 
+import static org.jinstagram.http.URLUtils.formURLEncode;
+
+import java.io.Serializable;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import org.jinstagram.auth.exceptions.OAuthException;
 import org.jinstagram.auth.model.Constants;
 import org.jinstagram.auth.model.OAuthConfig;
@@ -8,12 +14,9 @@ import org.jinstagram.auth.oauth.InstagramService;
 import org.jinstagram.http.Verbs;
 import org.jinstagram.utils.Preconditions;
 
-import static org.jinstagram.http.URLUtils.formURLEncode;
+public class InstagramApi implements Serializable {
+	private static final long serialVersionUID = -3353167558786595830L;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-public class InstagramApi {
 	public String getAccessTokenEndpoint() {
 		return Constants.ACCESS_TOKEN_ENDPOINT;
 	}

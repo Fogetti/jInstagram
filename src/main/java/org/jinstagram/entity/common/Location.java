@@ -1,8 +1,12 @@
 package org.jinstagram.entity.common;
 
+import java.io.Serializable;
+
 import com.google.gson.annotations.SerializedName;
 
-public class Location {
+public class Location implements Serializable {
+	private static final long serialVersionUID = 3933445717116838542L;
+
 	@SerializedName("id")
 	private String id;
 

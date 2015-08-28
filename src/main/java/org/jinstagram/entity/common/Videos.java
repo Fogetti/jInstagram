@@ -1,8 +1,13 @@
 package org.jinstagram.entity.common;
 
+import java.io.Serializable;
+
 import com.google.gson.annotations.SerializedName;
 
-public class Videos {
+public class Videos implements Serializable {
+
+	private static final long serialVersionUID = 6430474555283489048L;
+
 
 	@SerializedName("low_resolution")
 	private VideoData lowResolution;

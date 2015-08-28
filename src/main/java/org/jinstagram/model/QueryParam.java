@@ -1,6 +1,10 @@
 package org.jinstagram.model;
 
-public final class QueryParam {
+import java.io.Serializable;
+
+public final class QueryParam implements Serializable {
+	private static final long serialVersionUID = -2346152763669741276L;
+
 	public static final String ACTION = "action";
 
 	public static final String COUNT = "count";

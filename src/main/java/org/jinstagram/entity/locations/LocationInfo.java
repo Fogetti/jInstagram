@@ -7,6 +7,7 @@ import com.google.gson.annotations.SerializedName;
 
 public class LocationInfo extends InstagramObject{
 
+	private static final long serialVersionUID = 8327343212117903045L;
 	@SerializedName("data")
 	private Location locationData;
 

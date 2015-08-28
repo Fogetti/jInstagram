@@ -1,5 +1,7 @@
 package org.jinstagram.entity.common;
 
+import java.io.Serializable;
+
 import com.google.gson.annotations.SerializedName;
 
 /**
@@ -8,7 +10,9 @@ import com.google.gson.annotations.SerializedName;
  * @author Sachin Handiekar
  * @version 1.0
  */
-public class ImageData {
+public class ImageData implements Serializable {
+	private static final long serialVersionUID = -248630111550348501L;
+
 	@SerializedName("height")
 	private int imageHeight;
 
